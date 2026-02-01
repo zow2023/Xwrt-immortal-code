@@ -51,7 +51,7 @@ git clone https://github.com/zow2023/luci-app-dae package/dae
 git clone https://github.com/zow2023/openwrt_helloworld package/helloworld
 rm -rf package/helloworld/luci-app-dae
 rm -rf package/helloworld/dae
-rm -rf package/helloworld/shadowsocks-libev
+rm -rf package/helloworld/shadowsocksr-libev
 
 #git clone https://github.com/x-wrt/com.x-wrt package/x
 # git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
