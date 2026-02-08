@@ -15,8 +15,8 @@
 
 #git clone https://github.com/4IceG/luci-app-timecontrol package/luci-app-timecontrol
 #git clone https://github.com/xiaoxiao29/luci-app-adguardhome package/luci-app-adguardhome
-#git clone https://github.com/TanZhiwen2001/luci-app-adguardhome package/luci-app-adguardhome
-git clone https://github.com/sirpdboy/luci-app-adguardhome package/luci-app-adguardhome
+git clone https://github.com/TanZhiwen2001/luci-app-adguardhome package/luci-app-adguardhome
+#git clone https://github.com/sirpdboy/luci-app-adguardhome package/luci-app-adguardhome
 #git clone https://github.com/w9315273/luci-app-adguardhome package/luci-app-adguardhome
 
 # git clone https://github.com/sbwml/luci-app-filemanager package/luci-app-filemanager
@@ -40,15 +40,15 @@ rm -rf feeds/packages/net/smartdns
 #rm -rf feeds/luci/applications/luci-app-homeproxy
 #rm -rf feeds/packages/net/{dae,daed}
 
-#git clone https://github.com/douglarek/dae-openwrt package/dae
+git clone https://github.com/douglarek/dae-openwrt package/dae
 
-#git clone https://github.com/immortalwrt/homeproxy package/luci-app-homeproxy
+git clone https://github.com/immortalwrt/homeproxy package/luci-app-homeproxy
 
 #git clone https://github.com/Pacalini/luci-app-dae package/dae
 #git clone https://github.com/zow2023/luci-app-dae package/dae
 #git clone https://github.com/QiuSimons/luci-app-daed package/dae
 
-git clone https://github.com/zow2023/openwrt_helloworld package/helloworld
+#git clone https://github.com/zow2023/openwrt_helloworld package/helloworld
 #rm -rf package/helloworld/luci-app-dae
 #rm -rf package/helloworld/dae
 #rm -rf package/helloworld/shadowsocksr-libev
