@@ -44,7 +44,7 @@ rm -rf feeds/packages/net/smartdns
 
 #git clone https://github.com/Pacalini/luci-app-dae package/dae
 #git clone https://github.com/zow2023/luci-app-dae package/dae
-git clone https://github.com/QiuSimons/luci-app-daed -b kix package/dae
+git clone https://github.com/QiuSimons/luci-app-dae -b kix package/dae
 
 git clone https://github.com/zow2023/openwrt_helloworld package/helloworld
 rm -rf package/helloworld/luci-app-dae
