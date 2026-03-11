@@ -15,9 +15,9 @@
 
 #git clone https://github.com/4IceG/luci-app-timecontrol package/luci-app-timecontrol
 #git clone https://github.com/xiaoxiao29/luci-app-adguardhome package/luci-app-adguardhome
-git clone https://github.com/TanZhiwen2001/luci-app-adguardhome package/luci-app-adguardhome
+#git clone https://github.com/TanZhiwen2001/luci-app-adguardhome package/luci-app-adguardhome
 #git clone https://github.com/sirpdboy/luci-app-adguardhome package/luci-app-adguardhome
-#git clone https://github.com/w9315273/luci-app-adguardhome package/luci-app-adguardhome
+git clone https://github.com/w9315273/luci-app-adguardhome package/luci-app-adguardhome
 
 # git clone https://github.com/sbwml/luci-app-filemanager package/luci-app-filemanager
 
@@ -33,7 +33,6 @@ git clone https://github.com/muink/luci-app-tn-netports package/luci-app-tn-netp
 
 # 移除 openwrt feeds 自带的核心包
 rm -rf feeds/packages/net/{xray-core,sing-box,chinadns-ng,hysteria,v2ray-plugin}
-rm -rf feeds/packages/net/smartdns
 
 #rm -rf feeds/luci/applications/luci-app-dae
 #rm -rf feeds/luci/applications/luci-app-daed
@@ -46,9 +45,9 @@ rm -rf feeds/packages/net/smartdns
 #git clone https://github.com/zow2023/luci-app-dae package/dae
 git clone https://github.com/QiuSimons/luci-app-dae -b kix package/dae
 
-git clone https://github.com/zow2023/openwrt_helloworld package/helloworld
-rm -rf package/helloworld/luci-app-dae
-rm -rf package/helloworld/dae
+#git clone https://github.com/zow2023/openwrt_helloworld package/helloworld
+#rm -rf package/helloworld/luci-app-dae
+#rm -rf package/helloworld/dae
 #rm -rf package/helloworld/shadowsocksr-libev
 
 #git clone https://github.com/x-wrt/com.x-wrt package/x
@@ -61,8 +60,6 @@ git clone https://github.com/pymumu/openwrt-smartdns feeds/packages/net/smartdns
 git clone https://github.com/pymumu/luci-app-smartdns feeds/luci/applications/luci-app-smartdns
 
 #rm -rf feeds/luci/applications/luci-app-passwall
-
-
 #git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall/packages
 #git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall/luci  
 
@@ -83,7 +80,7 @@ rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang
 
 # Modify default IP
-sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.15.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
