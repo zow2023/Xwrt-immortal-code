@@ -32,7 +32,7 @@ git clone https://github.com/muink/luci-app-tn-netports package/luci-app-tn-netp
 #git clone https://github.com/muink/luci-app-tinyfilemanager package/luci-app-tinyfilemanager
 
 # 移除 openwrt feeds 自带的核心包
-rm -rf feeds/packages/net/{xray-core,sing-box,chinadns-ng,hysteria,v2ray-plugin}
+rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
 
 #rm -rf feeds/luci/applications/luci-app-dae
 #rm -rf feeds/luci/applications/luci-app-daed
@@ -45,19 +45,19 @@ rm -rf feeds/packages/net/{xray-core,sing-box,chinadns-ng,hysteria,v2ray-plugin}
 #git clone https://github.com/zow2023/luci-app-dae package/dae
 git clone https://github.com/QiuSimons/luci-app-dae -b kix package/dae
 
-#git clone https://github.com/zow2023/openwrt_helloworld package/helloworld
+git clone https://github.com/zow2023/openwrt_helloworld package/helloworld
 #rm -rf package/helloworld/luci-app-dae
-#rm -rf package/helloworld/dae
+rm -rf package/helloworld/dae
 #rm -rf package/helloworld/shadowsocksr-libev
 
 #git clone https://github.com/x-wrt/com.x-wrt package/x
 # git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
-rm -rf feeds/packages/net/smartdns
-rm -rf feeds/luci/applications/luci-app-smartdns  
-git clone https://github.com/zow2023/openwrt-smartdns feeds/packages/net/smartdns
+#rm -rf feeds/packages/net/smartdns
+#rm -rf feeds/luci/applications/luci-app-smartdns  
+#git clone https://github.com/zow2023/openwrt-smartdns feeds/packages/net/smartdns
 #git clone https://github.com/pymumu/openwrt-smartdns feeds/packages/net/smartdns
-git clone https://github.com/pymumu/luci-app-smartdns feeds/luci/applications/luci-app-smartdns
+#git clone https://github.com/pymumu/luci-app-smartdns feeds/luci/applications/luci-app-smartdns
 
 #rm -rf feeds/luci/applications/luci-app-passwall
 #git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall/packages
