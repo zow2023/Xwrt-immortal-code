@@ -55,8 +55,8 @@ git clone https://github.com/QiuSimons/luci-app-dae -b kix package/dae
 
 rm -rf feeds/packages/net/smartdns
 rm -rf feeds/luci/applications/luci-app-smartdns  
-#git clone https://github.com/zow2023/openwrt-smartdns feeds/packages/net/smartdns
-git clone https://github.com/pymumu/openwrt-smartdns feeds/packages/net/smartdns
+git clone https://github.com/zow2023/openwrt-smartdns feeds/packages/net/smartdns
+#git clone https://github.com/pymumu/openwrt-smartdns feeds/packages/net/smartdns
 git clone https://github.com/pymumu/luci-app-smartdns feeds/luci/applications/luci-app-smartdns
 
 #rm -rf feeds/luci/applications/luci-app-passwall
@@ -86,4 +86,4 @@ sed -i 's/192.168.15.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Modify hostname
-sed -i 's/OpenWrt/R3G/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/E8450/g' package/base-files/files/bin/config_generate
