@@ -31,7 +31,7 @@ git clone https://github.com/muink/luci-app-tn-netports package/luci-app-tn-netp
 #git clone https://github.com/muink/luci-app-tinyfilemanager package/luci-app-tinyfilemanager
 
 # 移除 openwrt feeds 自带的核心包
-rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
+rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box,adguardhome}
 
 #rm -rf feeds/luci/applications/luci-app-dae
 #rm -rf feeds/luci/applications/luci-app-daed
