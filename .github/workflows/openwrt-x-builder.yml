@@ -111,7 +111,29 @@ jobs:
            mkdir -p package/libcron && \
            wget -O package/libcron/Makefile \
            https://raw.githubusercontent.com/immortalwrt/packages/master/libs/libcron/Makefile
-           
+
+
+     - name: Patch Kernel Config for NETKIT
+       run: |
+          KERNEL_CONF="/mnt/work/openwrt/target/linux/mediatek/mt7622/config-6.12"
+
+          set_kernel_config() {
+            local key=$1
+            local file=$2
+            if grep -qE "^${key}=|^# ${key} is not set" "$file"; then
+              sed -i -E "s|^.*${key}.*|${key}=y|" "$file"
+            else
+              echo "${key}=y" >> "$file"
+            fi
+          }
+
+          set_kernel_config "CONFIG_BPF_SYSCALL"    "$KERNEL_CONF"
+          set_kernel_config "CONFIG_NETKIT"         "$KERNEL_CONF"
+          set_kernel_config "CONFIG_DEBUG_INFO_BTF" "$KERNEL_CONF"
+
+          # 验证写入结果
+          grep -E "CONFIG_BPF_SYSCALL|CONFIG_NETKIT|CONFIG_DEBUG_INFO" "$KERNEL_CONF"
+      
      - name: Download package
        id: package
        run: |
