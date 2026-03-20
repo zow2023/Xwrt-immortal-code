@@ -52,11 +52,11 @@ rm -rf package/helloworld/dae
 #git clone https://github.com/x-wrt/com.x-wrt package/x
 # git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
-rm -rf feeds/packages/net/smartdns
-rm -rf feeds/luci/applications/luci-app-smartdns  
-git clone https://github.com/zow2023/openwrt-smartdns feeds/packages/net/smartdns
+#rm -rf feeds/packages/net/smartdns
+#rm -rf feeds/luci/applications/luci-app-smartdns  
+#git clone https://github.com/zow2023/openwrt-smartdns feeds/packages/net/smartdns
 #git clone https://github.com/pymumu/openwrt-smartdns feeds/packages/net/smartdns
-git clone https://github.com/pymumu/luci-app-smartdns feeds/luci/applications/luci-app-smartdns 
+#git clone https://github.com/pymumu/luci-app-smartdns feeds/luci/applications/luci-app-smartdns 
 
 #git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 #git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-theme-argon-config
