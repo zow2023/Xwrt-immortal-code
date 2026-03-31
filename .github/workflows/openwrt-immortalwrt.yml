@@ -158,7 +158,7 @@ jobs:
 
     - name: Patch Kernel Config for NETKIT
       run: |
-          KERNEL_CONF="/mnt/work/openwrt/target/linux/mediatek/mt7622/config-6.12"
+          KERNEL_CONF="/openwrt/target/linux/mediatek/mt7622/config-6.12"
           set_kernel_config() {
             local key=$1
             local file=$2
